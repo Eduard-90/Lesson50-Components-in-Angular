@@ -1,4 +1,8 @@
 <main>
-  <app-add-post></app-add-post>
-  <app-post></app-post>
+  <app-add-user (onUser)="addUser($event)"></app-add-user>
+  <app-user
+    [name]="user.name"
+    [status]="user.status"
+    [avatar]="user.avatar"
+  ></app-user>
 </main>
